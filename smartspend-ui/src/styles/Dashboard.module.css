@@ -1,0 +1,179 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e1e2e;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #6b7280;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cardLabel {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.cardValue {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e1e2e;
+}
+
+.danger {
+  color: #dc2626;
+}
+
+.safe {
+  color: #16a34a;
+}
+
+.section {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e1e2e;
+  margin-bottom: 16px;
+}
+
+.empty {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.expenseList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.expenseItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f9fafb;
+  transition: background 0.2s;
+}
+
+.expenseItem:hover {
+  background: #f3f4f6;
+}
+
+.expenseIcon {
+  font-size: 1.4rem;
+}
+
+.expenseInfo {
+  flex: 1;
+}
+
+.expenseTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1e1e2e;
+}
+
+.expenseCategory {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.expenseAmount {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e1e2e;
+}
+
+.budgetList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.budgetItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.budgetHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #1e1e2e;
+}
+
+.progressBar {
+  height: 8px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progressSafe {
+  background-color: #16a34a;
+}
+
+.progressDanger {
+  background-color: #dc2626;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+}
