@@ -7,6 +7,7 @@ SmartSpendService/*.db
 SmartSpendService/*.db-shm
 SmartSpendService/*.db-wal
 SmartSpendService/appsettings.json
+SmartSpendService/appsettings.Development.json
 SmartSpendService/.vs/
 SmartSpendService/.vscode/
 
