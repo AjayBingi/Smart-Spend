@@ -1,0 +1,16 @@
+.vscode/
+
+# Backend
+SmartSpendService/bin/
+SmartSpendService/obj/
+SmartSpendService/*.db
+SmartSpendService/*.db-shm
+SmartSpendService/*.db-wal
+SmartSpendService/appsettings.json
+SmartSpendService/.vs/
+SmartSpendService/.vscode/
+
+# Frontend
+smartspend-ui/node_modules/
+smartspend-ui/build/
+smartspend-ui/.env
